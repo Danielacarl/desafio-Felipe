@@ -1,25 +1,32 @@
-### 1️⃣ Desafio Classificador de nível de Herói
- 
-NomeHeroi = input("Digite o nome do Heroi: ") 
+  ### 1️⃣ Desafio Classificador de nível de Herói
 
-xp = int(input(" Digite o Nível do Heroi: "))
+while True:
+    try:
+      NomeHeroi = input("Digite o nome do Heroi: ").strip().lower()
+    except ValueError:
+      print("XP deve ser Letras!")
+    try:
+      xp = int(input(" Digite o Nível do Heroi: "))
+    except ValueError:
+     print("XP deve ser números!")
 
-if xp < 1000:
-        Nivel = "Ferro"
+    if xp < 1000:
+      Nivel = "Ferro"
     elif xp <= 2000:
-        Nivel = "Bronze"
+      Nivel = "Bronze"
     elif xp <= 5000:
         Nivel = "Prata"
     elif xp <= 7000:
-        Nivel = "Ouro"
+      Nivel = "Ouro"
     elif xp <= 8000:
-        Nivel = "Platina"
+      Nivel = "Platina"
     elif xp <= 9000:
-        Nivel = "Ascendente"
+      Nivel = "Ascendente"
     elif xp <= 10000:
-        Nivel = "Imortal"
+      Nivel = "Imortal"
     else:
-        Nivel = "Radiante"
+      Nivel = "Radiante"
 
-print(f"O Herói de nome {NomeHeroi} está no nível {Nivel}")
+    print(f"O Herói de nome {NomeHeroi} está no nível {Nivel}")
+    break 
 
