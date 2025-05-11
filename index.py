@@ -7,7 +7,7 @@ xp = int(input(" Digite o Nível do Heroi: "))
 if xp < 1000:
     Nivel = "Ferro"
 elif xp <= 2.000:
-      Nivel = " Bronze"
+      Nivel = "Bronze"
 elif xp <= 5.000:
      Nivel = "Prata"
 elif xp <= 7.000:
@@ -21,4 +21,4 @@ elif xp  <= 10.000:
 else:
     Nivel = "Radiante"
 
-print(f"O Herói de nome {NomeHeroi} está no nível{xp}")
+print(f"O Herói de nome {NomeHeroi} está no nível{Nivel}")
